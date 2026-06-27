@@ -1,0 +1,97 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "WorkSans-Medium", sans-serif;
+  min-height: 2000px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/wedbody.jpg);
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero h1 {
+  font-family: "Sacramento-Regular", cursive;
+  font-size: clamp(4rem, 8vw, 6rem);
+}
+
+.hero h4 {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+.hero p {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+}
+
+.hero a {
+  color: var(--pink);
+  font-size: 15px;
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+@font-face {
+  font-family: "Sacramento-Regular";
+  src: url("font/Sacramento/Sacramento-Regular.ttf");
+}
+
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: url("font/Work_Sans/static/WorkSans-Medium.ttf");
+}
+
+/* @media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+} */
