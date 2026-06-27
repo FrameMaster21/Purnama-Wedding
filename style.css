@@ -85,54 +85,30 @@ body {
 /* MOBILE */
 @media (max-width: 576px) {
 
-  html {
-    font-size: 75%;
-  }
-
-  .hero h1 {
-    font-size: 4rem;
-
+  .simply-countdown {
     display: flex;
-    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
 
-    line-height: 1;
-  }
+    gap: 4px;
 
-  .hero h1 span {
-    display: block;
-  }
-
-  .hero h4 {
-    font-size: 1.2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .hero main {
     width: 100%;
-    padding: 1rem;
-  }
-
-  .simply-countdown {
-    gap: 5px;
-    justify-content: center;
   }
 
   .simply-countdown > .simply-section {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 
-    margin: 2px;
+    padding: 0;
+    margin: 0;
   }
 
   .simply-countdown > .simply-section .simply-amount {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .simply-countdown > .simply-section .simply-word {
-    font-size: 0.5rem;
+    font-size: 0.45rem;
   }
 }
